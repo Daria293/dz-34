@@ -10,9 +10,9 @@ else:
     kop = 0  # По умолчанию копейки равны 0
 
     for i, part in enumerate(parts):
-        if part `==` 'руб' and i > 0 and parts[i - 1].isdigit():
+        if part == 'руб' and i > 0 and parts[i - 1].isdigit():
             rub = int(parts[i - 1])
-        elif part `==` 'коп' and i > 0 and parts[i - 1].isdigit():
+        elif part == 'коп' and i > 0 and parts[i - 1].isdigit():
             kop = int(parts[i - 1])
 
     # Проверка, что нашли хотя бы количество рублей
